@@ -1,0 +1,21 @@
+<div class="menu-container">
+    <ul>
+      <li 
+        [ngClass]="{ 'active': selectedMenu === 'Home' }" 
+        (click)="chooseMenu('Home')">Home
+      </li>
+      <li 
+        [ngClass]="{ 'active': selectedMenu === 'Services' }" 
+        (click)="chooseMenu('Services')">Services
+      </li>
+      <li 
+        [ngClass]="{ 'active': selectedMenu === 'Contact us' }" 
+        (click)="chooseMenu('Contact us')">Contact us
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedMenu">
+      You chose {{ selectedMenu }} menu.
+    </div>
+  </div>
+  

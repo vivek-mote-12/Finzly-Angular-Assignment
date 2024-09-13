@@ -1,0 +1,30 @@
+.menu-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: lightgray;
+  }
+  
+  li.active {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  div {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
